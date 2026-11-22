@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TerrainLoop — The Paper</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="paper-standalone-shell">
+    <div class="paper-standalone-sheet">
+      <header class="paper-standalone-header">
+        <div>
+          <p class="section-kicker">TerrainLoop</p>
+          <h1>The paper</h1>
+        </div>
+        <div class="paper-controls">
+          <a href="index.html">← Overview &amp; 3D Lab</a>
+          <a href="public/terrainloop-paper.pdf" download="terrainloop-paper.pdf">Download .pdf</a>
+          <a href="public/terrainloop-paper.md" download="terrainloop-paper.md">Download .md</a>
+        </div>
+      </header>
+      <article class="paper-content" id="paperBody"></article>
+    </div>
+  </div>
+  <script src="paper-content.js"></script>
+  <script>
+    document.getElementById('paperBody').innerHTML = window.TERRAINLOOP_PAPER_HTML;
+  </script>
+</body>
+</html>
